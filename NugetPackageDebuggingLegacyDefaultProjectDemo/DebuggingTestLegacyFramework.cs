@@ -12,5 +12,9 @@ namespace NugetPackageDebuggingLegacyFrameworkDemo
         {
             Debugger.Break();
         }
+
+        public void OnlyInLegacySymbolsPackage()
+        { 
+        }
     }
 }
