@@ -57,3 +57,20 @@ To allow debugging, do the following:
 3. Go to Common properties => Debug Source Files 
 4. Add the path to the solution folder into "Directory containing source code".
 5. Click ok
+
+## Non SDK Project
+0. Default project configuration
+1. nuget pack -IncludeReferencedProjects -Symbols -Build -OutputDirectory "artifacts"  -Version 4.0.0
+2. ls
+
+>     Directory: ..
+> 
+> 
+> Mode                 LastWriteTime         Length Name
+> ----                 -------------         ------ ----
+> -a----        10/29/2024   4:44 PM           7106 NugetPackageDebuggingLegacyDefaultProjectDemo.4.0.0.symbols.nupkg
+
+3. nuget push .\NugetPackageDebuggingLegacyDefaultProjectDemo.4.0.0.symbols.nupkg -Source https://api.nuget.org/v3/index.json -ApiKey API_KEY
+
+### Result
+Same as above, but pdb file is added to the bin folder. But configuring a source link is still required
