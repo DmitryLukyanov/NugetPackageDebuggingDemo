@@ -18,7 +18,7 @@ PS C:\Git\NugetPackageDebuggingDemo\NugetPackageDebuggingDemo\artifacts> ls
 -Source https://api.nuget.org/v3/index.json 
 -ApiKey API_KEY
 
-# Other tried and that doesn't work
+# Other tried and that doesn't work without additional configuration
 ## Non SDK project and 4.5.2 / 4.8 monikers
 0. 
 
