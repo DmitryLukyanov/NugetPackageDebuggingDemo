@@ -28,8 +28,11 @@
     <!-- <WarningLevel>4</WarningLevel> -->
   <!-- </PropertyGroup> -->
   <PropertyGroup>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>  
+    <!-- <DebugType>pdbonly</DebugType> -->
+    <!-- <Optimize>true</Optimize> -->
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
