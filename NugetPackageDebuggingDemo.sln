@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NugetPackageDebuggingDemo", "NugetPackageDebuggingDemo\NugetPackageDebuggingDemo.csproj", "{1B488ED9-F519-4B08-9748-F50A8266A89C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7DA5CD62-8043-40A8-8454-6BB55DE1025E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SDK", "SDK", "{7DA5CD62-8043-40A8-8454-6BB55DE1025E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{40441000-96E4-4959-A98D-4B5523F2DAFC}"
 	ProjectSection(SolutionItems) = preProject
@@ -14,13 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Legacy", "Legacy", "{39E11895-BD90-43A6-8256-5152827B4564}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetPackageDebuggingLegacy480FrameworkDemo", "NugetPackageDebuggingLegacy480FrameworkDemo\NugetPackageDebuggingLegacy480FrameworkDemo.csproj", "{A1E70E9D-6D94-4971-9A63-46AC2CE79287}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_NET8", "ClassLibrary_NET8\ClassLibrary_NET8.csproj", "{EBF77249-59E2-49CE-8492-3424863A11C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetPackageDebuggingLegacyDefaultProjectDemo", "NugetPackageDebuggingLegacyDefaultProjectDemo\NugetPackageDebuggingLegacyDefaultProjectDemo.csproj", "{A0995BED-F8FC-4256-AAA2-AD53AAB22CF8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetPackageDebuggingLegacy480FrameworkDemoWithSourceLink", "NugetPackageDebuggingLegacy480FrameworkDemoWithSourceLink\NugetPackageDebuggingLegacy480FrameworkDemoWithSourceLink.csproj", "{86A58DA1-4106-45FD-80F8-124C5E66A1B7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetPackageDebuggingLegacy480FrameworkDemoWithSourceLinkAndDefaultConfiguration", "NugetPackageDebuggingLegacy480FrameworkDemoWithSourceLinkAndDefaultConfiguration\NugetPackageDebuggingLegacy480FrameworkDemoWithSourceLinkAndDefaultConfiguration.csproj", "{DC294527-41EE-4FD3-9A25-B0EE2116009E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_NET452_SDK", "ClassLibrary_NET452_SDK\ClassLibrary_NET452_SDK.csproj", "{0EA72812-50C1-4368-A958-BE6C6957C2E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,36 +22,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1B488ED9-F519-4B08-9748-F50A8266A89C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B488ED9-F519-4B08-9748-F50A8266A89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B488ED9-F519-4B08-9748-F50A8266A89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B488ED9-F519-4B08-9748-F50A8266A89C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A1E70E9D-6D94-4971-9A63-46AC2CE79287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1E70E9D-6D94-4971-9A63-46AC2CE79287}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1E70E9D-6D94-4971-9A63-46AC2CE79287}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1E70E9D-6D94-4971-9A63-46AC2CE79287}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A0995BED-F8FC-4256-AAA2-AD53AAB22CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0995BED-F8FC-4256-AAA2-AD53AAB22CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0995BED-F8FC-4256-AAA2-AD53AAB22CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0995BED-F8FC-4256-AAA2-AD53AAB22CF8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86A58DA1-4106-45FD-80F8-124C5E66A1B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86A58DA1-4106-45FD-80F8-124C5E66A1B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86A58DA1-4106-45FD-80F8-124C5E66A1B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86A58DA1-4106-45FD-80F8-124C5E66A1B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC294527-41EE-4FD3-9A25-B0EE2116009E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC294527-41EE-4FD3-9A25-B0EE2116009E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC294527-41EE-4FD3-9A25-B0EE2116009E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC294527-41EE-4FD3-9A25-B0EE2116009E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBF77249-59E2-49CE-8492-3424863A11C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF77249-59E2-49CE-8492-3424863A11C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF77249-59E2-49CE-8492-3424863A11C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF77249-59E2-49CE-8492-3424863A11C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EA72812-50C1-4368-A958-BE6C6957C2E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EA72812-50C1-4368-A958-BE6C6957C2E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EA72812-50C1-4368-A958-BE6C6957C2E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EA72812-50C1-4368-A958-BE6C6957C2E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{1B488ED9-F519-4B08-9748-F50A8266A89C} = {7DA5CD62-8043-40A8-8454-6BB55DE1025E}
-		{A1E70E9D-6D94-4971-9A63-46AC2CE79287} = {39E11895-BD90-43A6-8256-5152827B4564}
-		{A0995BED-F8FC-4256-AAA2-AD53AAB22CF8} = {39E11895-BD90-43A6-8256-5152827B4564}
-		{86A58DA1-4106-45FD-80F8-124C5E66A1B7} = {39E11895-BD90-43A6-8256-5152827B4564}
-		{DC294527-41EE-4FD3-9A25-B0EE2116009E} = {39E11895-BD90-43A6-8256-5152827B4564}
+		{EBF77249-59E2-49CE-8492-3424863A11C9} = {7DA5CD62-8043-40A8-8454-6BB55DE1025E}
+		{0EA72812-50C1-4368-A958-BE6C6957C2E4} = {7DA5CD62-8043-40A8-8454-6BB55DE1025E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {247A9815-5221-4E5F-9DEE-09DAE42F6FE1}

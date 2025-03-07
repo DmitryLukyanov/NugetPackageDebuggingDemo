@@ -2,32 +2,33 @@
 
 ## Link: https://lurumad.github.io/using-source-link-in-net-projects-and-how-to-configure-visual-studio-to-use-it
 
-## 1.1. SDK project (NugetPackageDebuggingDemo project):
+## 1.1. ClassLibrary_NET8:
 
 1. Pack:
 
-        dotnet pack .\NugetPackageDebuggingDemo.csproj -c Release -o .\artifacts --include-symbols
+         dotnet pack .\ClassLibrary_NET452_SDK.csproj -c Release -o .\artifacts --include-symbols
 
 2. ls:
 
-        PS C:\Git\NugetPackageDebuggingDemo\NugetPackageDebuggingDemo\artifacts> ls
+        PS C:\Git\NugetPackageDebuggingDemo\ClassLibrary_NET8\artifacts> ls
 
-             Directory: C:\Git\NugetPackageDebuggingDemo\NugetPackageDebuggingDemo\artifacts
- 
- 
+
+        Directory: C:\Git\NugetPackageDebuggingDemo\ClassLibrary_NET8\artifacts
+
+
         Mode                 LastWriteTime         Length Name
         ----                 -------------         ------ ----
-       -a----        10/28/2024   5:39 PM           3641 NugetPackageDebuggingDemo.1.0.0.nupkg
-       -a----        10/28/2024   5:39 PM           8425 NugetPackageDebuggingDemo.1.0.0.snupkg
+        -a----          3/7/2025   3:51 PM           3493 ClassLibrary_NET8.1.0.0.nupkg
+        -a----          3/7/2025   3:51 PM          10563 ClassLibrary_NET8.1.0.0.symbols.nupkg
 
 3. Push:
 
-      nuget push .\NugetPackageDebuggingDemo.1.0.0.nupkg 
-        -Source https://api.nuget.org/v3/index.json 
-        -ApiKey API_KEY
+      nuget push .\ClassLibrary_NET8.1.0.0.nupkg -Source https://api.nuget.org/v3/index.json -ApiKey $env:NUGET_API_KEY
 
 ### Result
 Everything works fine
+
+## ClassLibrary_NET452_SDK
 
 # 2. Other tried and that doesn't work without additional configuration
 
