@@ -29,7 +29,7 @@
   <!-- </PropertyGroup> -->
   <PropertyGroup>
     <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
+    <DebugType>portable</DebugType>
     <Optimize>false</Optimize>  
     <!-- <DebugType>pdbonly</DebugType> -->
     <!-- <Optimize>true</Optimize> -->
