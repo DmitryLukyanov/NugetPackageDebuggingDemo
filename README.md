@@ -241,3 +241,6 @@ Therefore debugging doesn't allow a step into the source, however it's allowed a
 ![SourceLinkIssue](SourceLinkissue.png)
 Force auth call by clicking `Authenticate for Source link` doesn't help.
 Therefore debugging doesn't allow a step into the source, however it's allowed after choosing `Decomplile` option, but it's not very reliable approach.
+
+
+# v4
