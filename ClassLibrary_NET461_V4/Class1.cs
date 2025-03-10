@@ -9,7 +9,7 @@ namespace ClassLibrary_NET461_V4
 {
     public class DebuggingTestLegacyFramework461_v4
     {
-        public void Test()
+        public void Test1()
         {
         }
 
