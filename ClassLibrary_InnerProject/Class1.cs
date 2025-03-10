@@ -12,6 +12,7 @@ namespace ClassLibrary_InnerProject
         public void TestWithDebugger3()
         {
             Debugger.Break();
+            var client = new MongoDB.Driver.MongoClient();
         }
     }
 }
